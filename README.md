@@ -10,7 +10,8 @@ I dati vengono estratti automaticamente dalla fonte ufficiale **ISTAT** (permali
 
 * **Frequenza di aggiornamento:** Ogni lunedì alle 04:00 UTC (tramite GitHub Actions `cron`).
 * **Esecuzione manuale:** Abilitata tramite il pulsante `workflow_dispatch` nella scheda Actions.
-* **Fonte ufficiale:** [ISTAT - Codici delle unità amministrative territoriali](https://www.istat.it/it/archivio/6777)
+* **Pagina Ufficiale ISTAT:** [ISTAT - Codici delle unità amministrative](https://www.istat.it/it/archivio/6777)
+* **Permalink Diretto File XLSX:** `https://www.istat.it/storage/codici-unita-amministrative/Elenco-comuni-italiani.xlsx`
 
 ---
 
