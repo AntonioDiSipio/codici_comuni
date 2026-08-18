@@ -36,3 +36,4 @@ Ogni record contiene i seguenti campi:
   "regione": "Veneto",
   "codice_istat": "028001"
 }
+_Ultimo controllo automatico: 2026-08-18 16:17:22 UTC_
