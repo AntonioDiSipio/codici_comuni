@@ -29,10 +29,14 @@ jobs:
       - name: Esegui script di aggiornamento
         run: python update_belfiore.py
 
+      - name: Aggiorna timestamp nel README
+        run: |
+          sed -i '/_Ultimo controllo automatico/d' README.md
+          echo -e "\n_Ultimo controllo automatico: $(date +'%Y-%m-%d %H:%M:%S UTC')_" >> README.md
+
       - name: Committa e spingi le modifiche
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add comuni_belfiore.json comuni_belfiore.csv
-          git commit --allow-empty -m "bot: aggiornamento automatico dati Belfiore/ISTAT [$(date +'%Y-%m-%d %H:%M')]"
-          git push
+          git add README.md comuni_belfiore.json comuni_belfiore.csv
+          git diff --staged --quiet || (git commit -m "bot: sincronizzazione dati Belfiore/ISTAT [$(date +'%Y-%m-%d')]" && git push)
