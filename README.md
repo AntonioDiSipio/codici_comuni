@@ -37,4 +37,5 @@ Ogni record contiene i seguenti campi:
   "codice_istat": "028001"
 }
 
-_Ultimo controllo automatico: 2026-08-18 16:19:22 UTC_
+
+_Ultimo controllo automatico: 2026-08-24 04:38:22 UTC_
