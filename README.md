@@ -45,4 +45,5 @@ Ogni record contiene i seguenti campi:
 
 
 
-_Ultimo controllo automatico: 2026-10-12 11:34:22 UTC_
+
+_Ultimo controllo automatico: 2026-10-19 09:30:25 UTC_
